@@ -25,10 +25,11 @@ char    *ft_strstr(char *str, char *to_find)
     return(NULL);
 }
 
-int     main(void)
+int     main(int argc, char* argv[])
 {
-    char str[] = "something like this";
-    char to_find[] = "e ";
-    printf("%s", ft_strstr(str, to_find));
-    return (0);
+   if (argc == 3)
+	   printf("%s", ft_strstr(argv[1], argv[2]));
+   else
+	   printf("fuck");
+   return (0);
 }

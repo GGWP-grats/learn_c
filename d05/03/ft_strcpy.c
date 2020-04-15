@@ -20,5 +20,6 @@ int main(void)
     char dest[10];
     char src[10] = "jarajaraj";
     printf("\n%s", ft_strcpy(dest, src));
+    ft_str
     return(0);
 }
